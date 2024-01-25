@@ -148,7 +148,7 @@
             </div>
             <div class="card-body">
                 <div class="author">
-                  <h4 class="card-title">Sofie Tärnblom</h4>
+                  <h4 class="card-title">Jane Doe</h4>
                   <h6 class="card-category">PR</h6>
                 </div>
               <p class="card-description text-center">
@@ -191,7 +191,7 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="text-center">Har du frågor?</h2>
-            <form class="contact-form" id="emailForm">
+            <form class="contact-form" id="emailForm" method="post">
               <div class="row">
                   <div class="col-md-6">
                       <label class="form-label">Namn</label>
@@ -220,7 +220,7 @@
               <textarea class="form-control" rows="8" placeholder="Meddelande" id="message" required></textarea>
               <div class="row">
                   <div class="col-md-4 ml-auto mr-auto">
-                      <button style="background-color: #EC407A; color:white" class="btn btn-danger btn-lg btn-fill" onclick="sendEmail()">Skicka meddelande</button>
+                    <button style="background-color: #EC407A; color:white" class="btn btn-danger btn-lg btn-fill" onclick="sendEmail()">Skicka meddelande</button>
                   </div>
               </div>
           </form>
@@ -313,15 +313,13 @@
           return;
       }
 
-      // You can add further email validation here if needed
-
       try {
-        const response = await fetch('/send-email', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({ name, email, message }),
+        const response = await fetch('/email-sender', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name, email, message }),
 });
 
           if (response.ok) {
@@ -338,5 +336,6 @@
       }
   }
 </script>
+
 </body>
 </html>
