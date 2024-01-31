@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Connect with investors and entrepreneurs on Hippopitch, a platform for business growth, investment, and partnerships. Create your pitch and find your match for free.">
     <meta name="keywords" content="hippopitch, entrepreneur, investor, business growth, partnership, matchmaking">
     <meta name="google-adsense-account" content="ca-pub-2976057389612164">
@@ -31,19 +31,19 @@
       <div class="collapse navbar-collapse justify-content-end" id="navigation">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/hippopitch" target="_blank">
+            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/61555844770480" target="_blank">
               <i class="fa fa-facebook-square"></i>
               <p class="d-lg-none">Facebook</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/hippopitch" target="_blank">
+            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/HippopitchAB" target="_blank">
               <i class="fa fa-twitter"></i>
               <p class="d-lg-none">Twitter</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/hippopitch" target="_blank">
+            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/hippopitch/?hl=sv" target="_blank">
               <i class="fa fa-instagram"></i>
               <p class="d-lg-none">Instagram</p>
             </a>
@@ -56,6 +56,9 @@
           </li>
           <li class="nav-item">
             <a href="../pages/sign-up.html" class="btn btn-danger btn-round" style="background-color: #EC407A; color:white"><i class="nc-icon nc-single-02"></i> Registrera dig</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/sign-in.html" class="btn btn-danger btn-round" style="background-color: #EC407A; color:white"><i class="nc-icon nc-tap-01"></i> Logga in</a>
           </li>
         </ul>
       </div>
@@ -116,19 +119,19 @@
         </div>
       </div>
     </div>
-    <div class="section section-image section-login" style="background-image: url('./assets/img/login-image.jpg');">
+    <div id="om-oss" class="section section-image section-login" style="background-image: url('./assets/img/login-image.jpg');">
       <div class="container">
       <h2 class="title">Det här är vi!</h2>
       <div class="row">
         <div class="col-md-4">
           <div class="card card-profile card-plain">
             <div class="card-avatar">
-                <img src="../assets/img/bruce-mars.jpg" alt="...">
+                <img src="../assets/img/drake.jpg" alt="...">
             </div>
             <div class="card-body">
                 <div class="author">
-                  <h4 class="card-title">Andre Kordasti</h4>
-                  <h6 class="card-category">IT-Arkitekt</h6>
+                  <h4 class="card-title">Drake</h4>
+                  <h6 class="card-category">Artist</h6>
                 </div>
               <p class="card-description text-center">
                 Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.
@@ -186,12 +189,12 @@
       </div>
     </div>
     </div>
-    <div class="section landing-section">
+    <div id="kontakta-oss" class="section landing-section">
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="text-center">Har du frågor?</h2>
-            <form class="contact-form" id="emailForm" method="post">
+            <form class="contact-form" id="emailForm" action="/send-email" method="post">
               <div class="row">
                   <div class="col-md-6">
                       <label class="form-label">Namn</label>
@@ -220,7 +223,7 @@
               <textarea class="form-control" rows="8" placeholder="Meddelande" id="message" required></textarea>
               <div class="row">
                   <div class="col-md-4 ml-auto mr-auto">
-                    <button style="background-color: #EC407A; color:white" class="btn btn-danger btn-lg btn-fill" onclick="sendEmail()">Skicka meddelande</button>
+                    <button style="background-color: #EC407A; color:white" class="btn btn-danger btn-lg btn-fill"  onclick="sendEmail(event)">Skicka Meddelande</button>
                   </div>
               </div>
           </form>
@@ -248,16 +251,16 @@
           <div class="col-lg-4">
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
               <li class="nav-item">
-                <a href="https://www.hippopitch.se" class="nav-link text-muted" target="_blank">Hippopitch</a>
+                <a href="../home/index.html#om-oss" class="nav-link text-muted" >Om Oss</a>
               </li>
               <li class="nav-item">
-                <a href="https://www.hippopitch.se/pages/om-oss" class="nav-link text-muted" target="_blank">Om Oss</a>
+                <a href="../home/index.html#kontakta-oss" class="nav-link text-muted" >Kontakta Oss</a>
               </li>
               <li class="nav-item">
-                <a href="https://www.hippopitch.se/pages/FAQ" class="nav-link text-muted" target="_blank">FAQ</a>
+                <a href="https://www.hippopitch.se/pages/FAQ" class="nav-link text-muted" >FAQ</a>
               </li>
               <li class="nav-item">
-                <a href="https://www.hippopitch.se/pages/licens" class="nav-link text-muted" target="_blank">Licens</a>
+                <a href="https://www.hippopitch.se/pages/licens" class="nav-link text-muted" >Licens</a>
               </li>
             </ul>
           </div>
@@ -301,41 +304,6 @@
         }
       });
     </script>
-<script>
-  async function sendEmail() {
-      // Simple client-side validation
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var message = document.getElementById('message').value;
-
-      if (!name || !email || !message) {
-          alert('Alla fält måste fyllas i.');
-          return;
-      }
-
-      try {
-        const response = await fetch('/email-sender', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ name, email, message }),
-});
-
-          if (response.ok) {
-              // Display success message
-              document.getElementById('success-message').style.display = 'block';
-              // Reset form
-              document.getElementById('emailForm').reset();
-          } else {
-              alert('Failed to send email. Please try again.');
-          }
-      } catch (error) {
-          console.error(error);
-          alert('An error occurred. Please try again later.');
-      }
-  }
-</script>
-
+<script src="../home/client.js"></script>
 </body>
 </html>
